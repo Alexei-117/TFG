@@ -1,2 +1,1 @@
-# TFG
-My latex documentation of my own TFG
+# TFG del Grado de Ingeniería Multimedia en la Universidad de Alicante
