@@ -11,160 +11,53 @@
 \section{Swarm Intelligence}
 \subsection{Definition}
 Swarm Intelligence is fairly recent area of research that grabbed the attention of scientists of several different fields back in the 1980s. Gerardo Beni and Jing Wang [BIBLIOGRAPHY - C][Beni, G., Wang J., “Self Organizing Sensory Systems,” in “Highly Redundant Sensing in Robotic Systems”, Tou, J.T., Balchen, J. G., eds., Proc. of NATO Advanced Workshop on Highly Redundant Sensing in Robotic Systems, Il Ciocco, Italy (June 1988), Springer-Verlag, Berlin (1990) 251–262] coined the term back in 1989 when they presented a paper on Cellular Automata. Cellular Automata was (and is) a fascinating field of study related to self-replicating robots that assemble into complex shapes like biologic cells do.
-	
-Its core field of study covers analysing the collective intelligence that arises from swarms, i.e. a large number of homogeneous and simple individuals that interact with their environment and between themselves in a decentralised and self-organized manner with rules provided by said environment. The capability of swarms to evolve and adapt to solve complex tasks still baffles scientists and researchers across different areas such as Biology, Sociology, Economics, Robotics, etc \udots [BIBLIOGRAPHY - A]
+
+Its core field of study covers analysing the collective intelligence that arises from swarms, i.e. a large number of homogeneous and simple individuals that interact with their environment and between themselves in a decentralised and self-organized manner with rules provided by said environment. The capability of swarms to evolve and adapt to solve complex tasks still baffles scientists and researchers across different areas such as Biology, Sociology, Economics, Robotics, etc... [BIBLIOGRAPHY - A]
 
 The strength of the swarm arises under the presence of several of its individuals in a medium. Whereas an isolated instance of the swarm might not be simple, the complexity of its behaviour pales in comparison to that of the whole collective when it interacts with its environment. Through cooperation or competition, the swarm is capable of autonomously navigate through it and achieve solutions to several different challenges.
 
 Due to its decentralized nature, positive properties arise from defining a swarm intelligence system to solve a difficult task when compared to building a centralized global solution.
 
-\begin{itemize}
-\item Cost effective: On the one hand, the construction of a single complex robot to solve a complex task requires a high cost in design of the hardware and software, a large cost in manufacturing its custom designed components and the specialized maintenance that the machine would require. Also, an individual agent supposes a higher risk for the task since any failure in the software or broken piece of hardware might be costly to analyse and fix. In the other hand, a swarm intelligence system is more cost-effective to produce.  Agents and their control system are simpler in comparison to its complex individual counterpart. The production of the agents can be parallelized, maintenance gets simpler and cheaper and even the complete failure of one agent of the swarm is easier to replace.
+\begin{description}
+\item[Cost effective:] On the one hand, the construction of a single complex robot to solve a complex task requires a high cost in design of the hardware and software, a large cost in manufacturing its custom designed components and the specialized maintenance that the machine would require. Also, an individual agent supposes a higher risk for the task since any failure in the software or broken piece of hardware might be costly to analyse and fix. In the other hand, a swarm intelligence system is more cost-effective to produce.  Agents and their control system are simpler in comparison to its complex individual counterpart. The production of the agents can be parallelized, maintenance gets simpler and cheaper and even the complete failure of one agent of the swarm is easier to replace.
 
-\item Robust: If an agent of a swarm were to be removed from it by any circumstance, the behaviour of the swarm wouldn't change and its effectivity in solving the problem would be barely reduced. The decentralized nature of the swarm allows it to lose some of its members and still be able to perform the task it is due, which is really important in situations were failure is catastrophic.
+\item[Robust:] If an agent of a swarm were to be removed from it by any circumstance, the behaviour of the swarm wouldn't change and its effectivity in solving the problem would be barely reduced. The decentralized nature of the swarm allows it to lose some of its members and still be able to perform the task it is due, which is really important in situations were failure is catastrophic.
 
-\item Less control: Swarm intelligence is autonomous by nature. Each of the agents of the swarm are equipped with a set of simple rules to interact with the environment and with one-another. This same rules can adapt given the specific scenario they are facing to change its behaviour and be able to perform multiple tasks with little programming. There is no need for a central of control although it can be simply added for data-gathering.
+\item[Less control:] Swarm intelligence is autonomous by nature. Each of the agents of the swarm are equipped with a set of simple rules to interact with the environment and with one-another. This same rules can adapt given the specific scenario they are facing to change its behaviour and be able to perform multiple tasks with little programming. There is no need for a central of control although it can be simply added for data-gathering.
 
-\item Parallelizable: Given that swarms are simpler to build than a set of complex robots for the same tasks, their production can be done in parallel thus saving time and energy on it. This parallel nature is also expressed in the field when performing a task, since different sub-groups of the same swarm can form and work on several different scenarios that are apart from each other without any extra programming needed. Also, the task can be done continuously since agents that need to recharge their energy supply or repaired do little effect to the overall work of the swarm and can be substituted by other agents.
-\end{itemize}
+\item[Parallelizable:] Given that swarms are simpler to build than a set of complex robots for the same tasks, their production can be done in parallel thus saving time and energy on it. This parallel nature is also expressed in the field when performing a task, since different sub-groups of the same swarm can form and work on several different scenarios that are apart from each other without any extra programming needed. Also, the task can be done continuously since agents that need to recharge their energy supply or repaired do little effect to the overall work of the swarm and can be substituted by other agents.
+\end{description}
 
-Clear examples like the collision avoidance of birds when flocking, or the ability of ants to build complex structures, finding food, defending their queen or even dealing with their dead relatives [Bibliography: https://www.nationalgeographic.com/news/2014/7/140708-corpse-removal-ants-social-animal-survival-science/] is a prime example of the power of self-organisation of simple individuals. Individuals of said agrupations don't perform
+Clear examples surface when watching the behaviour of social animals. You can see swarm intelligence when watching the collision avoidance of birds when flocking, the architectural ability of bees to build their beehives or the food command chains of ants and their behaviour while dealing with their dead relatives [Bibliography: \text{https://www.nationalgeographic.com/news/2014/7/140708-corpse-removal-ants-social-animal-survival-science/}] as a prime example of the power of self-organisation of simple individuals. Individuals of said aggrupations cannot exhibit the properties that emerge from the social collective by their own. You cannot see one bird flock, nor one bee building an entire beehive and less even an ant organizing an entire nest. Each of these individuals is equipped with a series of sensors that allows them to communicate and perceive their peers and the medium they inhabit. Adding that to a simple set of rules such as "See bird, avoid bird" or "Smell 4 warrior ants, become gatherer ant" [BIBLIOGRAPHY HERE] gives the swarm the ability to act in these complex ways.
+
+Common behaviours in Nature are often the focus of studies in Swarm Intelligence. The study of behaviours of several social animals and their interactions led to the creation of techniques that work perfectly with stochastic problems, that is, problems that deal with random processes. This algorithms are called metaheuristics, and they are starting to emerge as an alternative to classical solutions to problems with uncertainty, stochastic or dynamic parts [Bibliography: Bianchi, L., Dorigo, M., Gambardella, L.M. et al. A survey on metaheuristics for stochastic combinatorial optimization. Nat Comput 8, 239–287 (2009). https://doi.org/10.1007/s11047-008-9098-4]. Some of these metaheuristics are briefly explained in the next list to highlight the importance of Swarm Intelligence[Bibliography: Saka, M. P., Doğan, E., Aydogdu, I. (2013). Analysis of Swarm Intelligence–Based Algorithms for Constrained Optimization. Swarm Intelligence and Bio-Inspired Computation, 25–48. doi:10.1016/b978-0-12-405163-8.00002-8 /// Link: https://sci-hub.tw/https://www.sciencedirect.com/science/article/pii/B9780124051638000028].
+
+\begin{description}
+\item[Ant Colony Optimization (ACO):] It is based in the ants colony's system to achieve the shortest path to a source of food by using pheromones. Pheromones are fleeting chemical substances that lingers in the air. Ants perceive the amount of pheromones through their antennas as they walk by the different trails left by other ants, and when faced with a split path of pheromones, they always walk to the one that has the highest concentration. The shortest paths will always have a higher concentration in the end by having more ants passing through it, so the shortest paths are the ones that remain in the end. [BIBLIOGRAPHY: Dorigo, M., Maniezzo, V., Colorni, A., 1991. Distributed optimization by ant colony. Proceedings of ECAL91-First European Conference on Artificial Life. Elsevier, Paris, France, pp. 134-142. /// SIMPLIFIED: (Dorigo et al., 1991).]
+
+\item[Particle Swarm Optimizer (PSO):] By imitating the intricate movement of birds when flocking or certain fishes when schooling, the algorithm solves optimization problems by exploration and information sharing. You initialize a certain number of agents with random positions and velocities. You assign a fitness function that represent how proximate the current solution is to the goal. Then, the agent decides where its next step going to be by making a weighted sum for its velocity that takes into account the previous velocity they had, a velocity that directs them to the best position they've found themselves and also a velocity that directs them to the best position the agents local to them found the best solution so far. Repeat the cycle for each agent until the agents find a solution and choose the agent that represents the best solution. [BIBLIOGRAPHY: Kennedy, J., Eberhart, R., 1995. Particle swarm optimization. IEEE International Conference on Neural Networks, vol. 4, IEEE Press, Perth, Australia, pp. 1942-1948. /// SIMPLIFIED:  (Kennedy and Eberhart, 1995)]
+
+\item[Firefly Algorithm (FFA):] Fireflights use their lights to attract and find potential parterns. An idealized version of this behaviour leads to a Constrained Optimization algorithm where the attractiveness of and distance between fireflights determines the objective of other fireflights. The brighter they are, the more attractive they seem. The farther they are set apart, the less attractive they seem. The algorithm sets that the fireflights will go to a fireflight that is brigther than them or random if none are found. [BIBLIOGRAPHY: Yang, X.S., 2009. Firefly algorithms for multimodal optimization. In: Watanabe, O., Zeugmann, T. (Eds.), Stochastic Algorithms: Foundations and Applications. SpringerVerlag, Berlin (SAGA 2009, Lecture Notes in Computer Science, 5792, 169-178). // SIMPLIFIED: (Yang, 2009).]
+
+\item[Bat Algorithm (BA):] Bats emit loud pulses of sound that reverberate against the walls and objects present in their 3D environment. They use this echolocation to hunt and navigate without colliding inside the cave they're in. By meassuring the difference in time of the echo between each ear, between emiting and listening it and the variation of loundness, it maps its surroundings and its able to locate the position and even the speeds of small insects. Converting this properties into an algorithm allows a number of agents to explore and hunt any prey in a closed environment. [BIBLIOPGRAHY: Yang, X.S., 2010. A new metaheuristic bat-inspired algorithm. In: Gonzalez, J.R., et al., (Eds.), Nature Inspired Cooperative Strategies for Optimization (NISCO 2010), vol. 284. Springer, Berlin, pp. 65-74. (Studies in Computational Intelligence). /// SIMPLIFIED: (Yang, 2010)]
+
+\item[Hunting Search Algorithm (HS):] There are social animals that hunt in group, such as wolves. Their strategy revolves around creating an area with the members of the pack around the victim and reducing the size of the area by coordinating their movements. This algorithms follows the same principle by creating fases of search-hunt and correcting the movement of the agents based on the leader of the pack, which is the member with closest to the solution, a.k.a. the prey. [BIBLIOGRAPHY: Oftadeh, R., Mahjoob, M.J., Shariatpanahi, M., 2011. A novel metaheuristic optimization algorithm inspired by group hunting of animals: hunting search. Comput. Math. Appl. 60, 2087-2098. /// SIMPLIFIED: (Oftadeh et al., 2011).]
+\end{description}
+
+\subsection{Swarm Robotics}
 
 
+\subsection{Swarm Robotics Modelling}
 
-Common behaviours in Nature are the focus of studies in the Swarm Intelligence field, from which different optimization algorithms are obtained.
-
-Currently Swarm Intelligence is a field with several defined metaheuristics that help solve many problems like:
-
-\begin{itemize}
-\item Pues lo de point cloud optimization
-\item lo otro aquello
-\item Aquello
-	\subitem Aquello de eso
-\end{itemize}
-
-\subsection{Different type of swarm intelligences}
 [HABLAR DE LAS HORMIGAS; EL ESTUDIO DE OLER COSAS]
 [HABLAR DE LA TROPHALLAXIS]
 [HABLAR DE ESTRATEGIAS DE COMPETITIVAD Y ESO]
 
-\subsection{Self-Organization and Emergence}
 
-Explicar aquí el origen de la swarm intelligence, los trabajos de heiko y tal que son pilar para esta investigación. Cómo no hay modelos matemáticos pero que diferentes estudios a lo largo del tiempo han intentado estudiar la matemática del caos y aún nada.
-
-\subsection{Swarm Robotics}
-
-\section{Agent simulation}
+\section{Simulation}
 Explicar aquí los trabajos de simulación en general de inteligencia artificial, como de estos algunos simulan hormigas de langdon, agentes cooperando ,etc. Hablar de las competiciones de DARPA y tal.
 
 \section{Fokker-Planck}
 Hablar de Fokker-planck en su actualidad, como nació las mates de esto etc, lo de Einstein, ecuaciones langevin, su uso para el macro-micro, etc.
 
 \section{Parallel Programming and Simulation}
-
-\section{Lo que había antes de las listas}
-
-Hacer una lista es simple en \LaTeX. Para ello has de crear un entorno (así se llama) itemize con
-\begin{lstlisting}[style=Latex-color]
-\begin{itemize}
-...
-\end{itemize}
-\end{lstlisting}
-Y dentro de esa estructura, añadir cada elemento de la lista precedido de 
-\begin{lstlisting}[style=Latex-color]
-\item primer ítem de lista
-\item segundo ítem de lista
-...
-\item ultimo ítem de lista
-\end{lstlisting}
-
-Es importante que revises este texto tal como aparece en la plantilla y relaciones el aspecto que tiene el PDF final con cómo está escrito el documento \LaTeX.
-\vspace{1em}
-\noindent\hrule
-\vspace{1em}
-
-Aquí va una lista con subtérminos:
-\begin{lstlisting}[style=Latex-color]
-	\begin{itemize}
-    \item Ingeniería Informática.
-    \item Ingeniería Sonido e Imagen en Telecomunicación.
-    \item Ingeniería Multimedia.
-         \subitem Mención: Creación y ocio digital.
-         \subitem Mención: Gestión de Contenidos.
-	\end{itemize}
-\end{lstlisting}
-
-El resultado es el siguiente:
-\begin{itemize}
-    \item Ingeniería Informática.
-    \item Ingeniería Sonido e Imagen en Telecomunicación.
-    \item Ingeniería Multimedia.
-         \subitem Mención: Creación y ocio digital.
-         \subitem Mención: Gestión de Contenidos.
-\end{itemize}
-\vspace{1em}
-\noindent\hrule
-\vspace{1em}
-Aquí va una lista con subtérminos pero numerada:
-\begin{lstlisting}[style=Latex-color]
-\begin{enumerate}
-    \item Ingeniería Informática.
-    \item Ingeniería Sonido e Imagen en Telecomunicación.
-    \item Ingeniería Multimedia.
-    \begin{enumerate}
-         \item Mención: Creación y ocio digital.
-         \item Mención: Gestión de Contenidos.
-   	\end{enumerate}
-\end{enumerate}
-\end{lstlisting}
-
-El resultado es el siguiente:
-\begin{enumerate}
-    \item Ingeniería Informática.
-    \item Ingeniería Sonido e Imagen en Telecomunicación.
-    \item Ingeniería Multimedia.
-    \begin{enumerate}
-         \item Mención: Creación y ocio digital.
-         \item Mención: Gestión de Contenidos.
-   	\end{enumerate}
-\end{enumerate}
-
-\section{Listas de definición}
- 
- Puedes realizar una lista de conceptos con su definición del siguiente modo:
- 
-\begin{lstlisting}[style=Latex-color]
-\begin{description} % Inicio de la lista
- 	\item[MAPP XT:] Programa desarrollado por \textit{Meyer Sound} para el diseño y ajuste de sistemas formados por altavoces de su marca.
-  	\begin{description} % Realiza una lista dentro de la lista
-  		\item[Ventajas:]~ 
-  		El programa permite realizar múltiples ajustes tal como se podría realizar en la realidad con un procesador real.
-  	
-  		Permite analizar la fase recibida en cualquier punto y compararla con otras mediciones.
-  	
-  		Dispone de varios tipos de filtros, inversiones de fase, etc.
-  		\item[Inconvenientes:]~ 
-  		No existe una lista global de los altavoces ubicados en el plano, por lo tanto solo se pueden editar seleccionándolos sobre el plano.
-  	
-  		Sólo permite diseñar en 2 dimensiones, principalmente sobre la vista lateral ya que los array de altavoces no permite voltearlos.
-  	\end{description}
-\end{description}
-\end{lstlisting}
-
- Y \LaTeX~genera lo siguiente:
- 
-\begin{description} % Inicio de la lista
- 	\item[MAPP XT:] Programa desarrollado por \textit{Meyer Sound} para el diseño y ajuste de sistemas formados por altavoces de su marca.
-  	\begin{description} % Realiza una lista dentro de la lista
-  		\item[Ventajas:]~ 
-  		El programa permite realizar múltiples ajustes tal como se podría realizar en la realidad con un procesador real.
-  	
-  		Permite analizar la fase recibida en cualquier punto y compararla con otras mediciones.
-  	
-  		Dispone de varios tipos de filtros, inversiones de fase, etc.
-  		\item[Inconvenientes:]~ 
-  		No existe una lista global de los altavoces ubicados en el plano, por lo tanto solo se pueden editar seleccionándolos sobre el plano.
-  	
-  		Sólo permite diseñar en 2 dimensiones, principalmente sobre la vista lateral ya que los array de altavoces no permite voltearlos.
-  	\end{description}
-\end{description}
