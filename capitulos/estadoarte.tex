@@ -31,6 +31,7 @@ Due to its decentralized nature, positive properties arise from defining a swarm
 Clear examples surface when watching the behaviour of social animals. You can see swarm intelligence when watching the collision avoidance of birds when flocking, the architectural ability of bees to build their beehives or the food command chains of ants and their behaviour while dealing with their dead relatives [Bibliography: \text{https://www.nationalgeographic.com/news/2014/7/140708-corpse-removal-ants-social-animal-survival-science/}] as a prime example of the power of self-organisation of simple individuals. Individuals of said aggrupations cannot exhibit the properties that emerge from the social collective by their own. You cannot see one bird flock, nor one bee building an entire beehive and less even an ant organizing an entire nest. Each of these individuals is equipped with a series of sensors that allows them to communicate and perceive their peers and the medium they inhabit. Adding that to a simple set of rules such as "See bird, avoid bird" or "Smell 4 warrior ants, become gatherer ant" [BIBLIOGRAPHY HERE] gives the swarm the ability to act in these complex ways.
 
 \subsection{Metaheuristics}
+[FIGURE: Provide IMAGES for at least 2 algorithms]
 Common behaviours in Nature are often the focus of studies in Swarm Intelligence. The study of behaviours of several social animals and their interactions led to the creation of techniques that work perfectly with stochastic problems, that is, problems that deal with random processes. This algorithms are called metaheuristics, and they are starting to emerge as an alternative to classical solutions to problems with uncertainty, stochastic or dynamic parts [Bibliography: Bianchi, L., Dorigo, M., Gambardella, L.M. et al. A survey on metaheuristics for stochastic combinatorial optimization. Nat Comput 8, 239–287 (2009). https://doi.org/10.1007/s11047-008-9098-4]. \citep{B_Swarm_Optimization} defines some of these metaheuristics and they are briefly explained in the next list to highlight the importance of Swarm Intelligence.
 
 \begin{description}
@@ -46,6 +47,7 @@ Common behaviours in Nature are often the focus of studies in Swarm Intelligence
 \end{description}
 
 \section{Swarm Robotics}
+[FIGURE: Provide IMAGES for at least 3 categories]
 Swarm Robotics, as defined per [BIBLIOGRAPHY: Bayındır, L. (2016). A review of swarm robotics tasks. Neurocomputing, 172, 292–321. doi:10.1016/j.neucom.2015.05.116],  is an research discipline that studies how different systems composed of multiple self-operating robots can be used to solve collective tasks. More importantly, these tasks cannot be solved by a single robot or are solved more effectively there's a group of robots working on it. This terminology separates swarm robotics from the usual robotics, since the importance here is not the design of a complex individual agent that is capable of solving multiple tasks by itself, but the design of hardware and software for multiple simple agents that are able to perform said complex tasks, and even out-perform individual agents on it. There's also a series of advantages for Swarm Robotics that we discussed when defining Swarm Intelligence, that were originally stated by [BIBLIOPGRAPHY: E. Şahin, Swarm robotics: from sources of inspiration to domains of application, in: Swarm Robotics, Springer, Berlin, 2005, pp. 10–20], which are the flexibility, robustness and scalability of Swarm Robotics. 
 	Whereas Swarm Intelligence is a property that emerges from the real construction of robotic swarms, unless there are working physical agents both terminologies are used indistinctly. Swarm Intelligence is said to \emph{emerge} since the global behaviour of the system results as an indirect consequence of the microscopic interactions between the robots and the medium. The global mechanics are not pre-programmed into the robots nor do they have knowledge of any macro-behaviour, but it is the desired property that researchers look into.
 	The term "Swarm Robotics" didn't kick-off until recently, as stated by \citep{C_gerardo_beni}, because of the limitations to manufacture and produce robots during the initial stages of Swarm Intelligence Research. Even for the simplest of robots, the production of several robotic entities with their systems of mobility, communication and internal processing was costly and hindered to a limited number of entities. Nowadays, different projects around the world involving swarm robotics in different areas such as research, military, social sciences, zoology, marine biology, etc...\cite{D_Swarm_Applications} are performed and the term has settled within the community. Some of these approaches will be listed briefly to show the capabilities of swarm robotics in Research and commercial products.
@@ -66,15 +68,29 @@ Swarm Robotics, as defined per [BIBLIOGRAPHY: Bayındır, L. (2016). A review of
 \end{description}
 
 \subsection{Swarm Robotics Modelling}
-By using the Taxonomy curated in \cite{D_Swarm_Applications}, this work can be classified and related to other works in the area.
+The taxonomy curated in \cite{D_Swarm_Applications} classifies different types of swarm behaviours that are often analysed and researched. The main thre categories make a high-level division of the different categories into Spatial Organization, Navigation, Decision Making and another category for miscellaneous behaviours that  don't totally fit in the previous ones. These categories will be further explained and the strategy this work will use put in relation with other works of the same area.
+
+[FIGURE: Do figure here with the taxonomy]
+
+\subsubsection{Spatial Organization}
+Spatial Organization englobes all swarm behaviours that deal with the localisation and distribution of the swarm over the area, the shapes that they arrange themselves into or the spatial interaction with certain objects in the medium.
+
+\begin{description}
+\item[Aggregation]: consists of making the agents cluster around certain in a certain zone in the environment. It allows the robots to have new interactions when packed together.
+
+
+\end{description}
+
+\subsubsection{Navigation}
+\subsubsection{Decision Making}
+\subsubsection{Miscellaneous}
 [HABLAR DE LAS HORMIGAS; EL ESTUDIO DE OLER COSAS]
 [HABLAR DE LA TROPHALLAXIS]
 [HABLAR DE ESTRATEGIAS DE COMPETITIVAD Y ESO]
 
 
 \section{Simulation}
-Explicar aquí los trabajos de simulación en geç
-neral de inteligencia artificial, como de estos algunos simulan hormigas de langdon, agentes cooperando ,etc. Hablar de las competiciones de DARPA y tal.
+Explicar aquí los trabajos de simulación en general de inteligencia artificial, como de estos algunos simulan hormigas de langdon, agentes cooperando ,etc. Hablar de las competiciones de DARPA y tal.
 
 \section{Fokker-Planck}
 Hablar de Fokker-planck en su actualidad, como nació las mates de esto etc, lo de Einstein, ecuaciones langevin, su uso para el macro-micro, etc.
